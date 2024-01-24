@@ -180,7 +180,17 @@ a collection of users, each user will have 2 fields.
         ]
     }
     ```
-    
+    If the `id` provided does not correspond to an existing user, the response
+    has the HTTP status code `404` and the response adheres to the format:
+    ```json
+    {
+        "detail": {
+            "type": "entity_not_found",
+            "entity_name": "User",
+            "entity_id": "user1"
+        }
+    }
+    ```
 
 
 
