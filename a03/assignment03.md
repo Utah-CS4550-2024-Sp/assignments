@@ -313,6 +313,8 @@ replaces the `user_id` key with `user`, eg,
   }
   ```
 
+- The `DELETE /chats/{chat_id}` route should be removed since we will want to do deletion properly.
+
 - The `GET /chats/{chat_id}/messages` route should be updated so that the response matches
   the new message format, eg,
   ```json
