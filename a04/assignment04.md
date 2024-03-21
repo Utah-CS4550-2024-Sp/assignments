@@ -50,10 +50,11 @@ system project for some styling ideas and patterns.
 **Note**: You must use tailwind to style at least three of your pages: the login page, the
 registration page, and the profile page. Styling the rest of the application can either be
 done use tailwind or your original CSS. If you style everything with tailwind, it's a good
-idea to stop importing all of your CSS files except for `src/index.css` and building up
-from scratch. If you are going to keep some CSS around, you might consider deleting all of
-the original CSS in `src/index.css` and applying tailwind classes to some of your high
-level components and the `root div`.
+idea to delete the rest of the styling in `src/index.css`, to stop importing all of
+your CSS files except for `src/index.css`, and then to start building up from scratch. If
+you are going to keep some CSS around, you still might consider deleting all of the
+original CSS in `src/index.css` and applying tailwind classes to some of your high level
+components and the `root div` in `index.html`.
 
 ## Authentication
 
@@ -94,7 +95,7 @@ If a user is logged in, the app must support the routes
 - `/chats/:chatId`
 - `/profile`
 
-If a user is not logged in, the app should support the routes
+If a user is not logged in, the app must support the routes
 - `/`
 - `/login`
 - `/register`
@@ -180,8 +181,8 @@ If a user is not logged in, the elements are
 3. The profile page. For ease of grading, you must use a component located at
    `src/components/Profile.jsx`. Recall that it must be styled using tailwind. This page
    is located at the route `/profile`. It should include the user details: `username`,
-   `email`, and `created_at`. It should also a button with the text `logout` that logs the
-   user out and redirects to the `/login` route when it is clicked. It could look
+   `email`, and `created_at`. It should also include a button with the text `logout` that
+   logs the user out and redirects to the `/login` route when it is clicked. It could look
    something like this.
     ```
     username: juniper
