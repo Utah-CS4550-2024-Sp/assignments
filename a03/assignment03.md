@@ -23,7 +23,7 @@ passlib = "1.7.4"
 python-jose = "3.3.0"
 bcrypt = "4.1.2"
 cryptography = "42.0.2"
-python-multipart = "0.0.9"
+python-multipart = "^0.0.9"
 ```
 
 If you are using a virtual environment, you can add the following lines to your
@@ -36,7 +36,7 @@ passlib==1.7.4
 python-jose==3.3.0
 bcrypt==4.1.2
 cryptography==42.0.2
-python-multipart==0.0.9
+python-multipart==^0.0.9
 ```
 
 ## Database
@@ -103,7 +103,7 @@ from backend.database import create_db_and_tables
 ...
 
 @asynccontextmanager
-def lifespan(app: FastAPI):
+async def lifespan(app: FastAPI):
     create_db_and_tables()
     yield
 
