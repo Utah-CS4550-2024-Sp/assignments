@@ -48,7 +48,7 @@ Then you can upload the updated zip file to your lambda application via the Lamb
 console, or via the command line.
 
 ```bash
-aws lambda update-function \
+aws lambda update-function-code \
 --function-name pony-express-lambda \
 --zip-file build.zip
 ```
