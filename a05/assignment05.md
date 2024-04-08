@@ -42,7 +42,7 @@ The specification will be available soon.
 The goal of assignment #5c is to add features to both the backend and frontend that
 support managing chat messages, including
 - editing messages
-- deleted messages
+- deleting messages
 - enforcing some limited permissions around message management
 
 The specification will be available soon.
