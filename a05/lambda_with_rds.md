@@ -175,10 +175,10 @@ lambda function to seed the database.
     {
         "statusCode": 200,
         "body": {
-            user_count: {local: 10, prev: 0, additions: 10, final: 10},
-            chat_count: {local: 6, prev: 0, additions: 6, final: 6},
-            message_count: {local: 291, prev: 0, additions: 291, final: 291},
-            link_count: {local: 13, prev: 0, additions: 13, final: 13}
+            "user_count": {"local": 10, "prev": 0, "additions": 10, "final": 10},
+            "chat_count": {"local": 6, "prev": 0, "additions": 6, "final": 6},
+            "message_count": {"local": 291, "prev": 0, "additions": 291, "final": 291},
+            "link_count": {"local": 13, "prev": 0, "additions": 13, "final": 13}
         }
     }
     ```
