@@ -16,9 +16,8 @@ the cloud. You are free to choose any deployment strategy, but support is only p
 for the two strategies covered in class. Your backend and frontend must be publicly
 available on the internet for at least two weeks after the due date.
 
-1. [Package your backend application](./package_backend.md)
-2. Deploy your backend application to AWS Lambda with your database hosted and seeded in
-   one of two places:
+1. Package and deploy your backend application to AWS Lambda. Host your database in the 
+   and seed it with initial data. Choose one of the following:
    
     a. [With database hosted in EFS](./lambda_with_efs.md)
    
