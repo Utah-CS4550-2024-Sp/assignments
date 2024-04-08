@@ -182,8 +182,8 @@ or you may choose something else that fits the aesthetic of your page.
 ```
 --------------------------------------------------------------------------
 | juniper                      Thu 29 Feb, 2024 - 3:42pm                 |
-|   ------------------------------------------------------------- -------|
-|   | this is a cool message that i edited.                     | | save |
+|   ---------------------------------------------------- ----------------|
+|   | this is a cool message that i edited.            | | save | cancel |
 --------------------------------------------------------------------------
 ```
 
@@ -196,9 +196,9 @@ or you may choose something else that fits the aesthetic of your page.
 |   | this is a cool message that i edited. |   |
 |   -----------------------------------------   |
 |                                               |
-|   --------                                    |
-|   | save |                                    |
-|   --------                                    |
+|   --------  ----------                        |
+|   | save |  | cancel |                        |
+|   --------  ----------                        |
 -------------------------------------------------
 ```
 
