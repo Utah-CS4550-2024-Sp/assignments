@@ -19,10 +19,13 @@ available on the internet for at least two weeks after the due date.
 1. [Package your backend application](./package_backend.md)
 2. Deploy your backend application to AWS Lambda with your database hosted and seeded in
    one of two places:
+   
     a. [With database hosted in EFS](./lambda_with_efs.md)
+   
     b. [With database hosted in RDS](./lambda_with_rds.md)
-3. [Add an HTTP API](./api_gateway.md) that integrates with your lambda function
-4. [Deploy your frontend application](./amplify.md) to AWS Amplify.
+   
+4. [Add an HTTP API](./api_gateway.md) that integrates with your lambda function
+5. [Deploy your frontend application](./amplify.md) to AWS Amplify.
 
 ## Assignment #5b
 
