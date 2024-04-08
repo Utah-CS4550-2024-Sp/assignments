@@ -60,7 +60,7 @@ engine = create_engine(
 We need to build a zip file that contains our backend code alongside its dependencies.
 This zip file should contain dependencies that are compatible with `x86_64` architecture.
 
-See [./package_backend.md](Package your backend application).
+See [Package your backend application](./package_backend.md).
 
 ## Choose a VPC (Virtual Private Cloud)
 
