@@ -17,7 +17,7 @@ for the two strategies covered in class. Your backend and frontend must be publi
 available on the internet for at least two weeks after the due date.
 
 1. Package and deploy your backend application to AWS Lambda. Host your database in the 
-   and seed it with initial data. Choose one of the following:
+   cloud and seed it with initial data. Choose one of the following:
    
     a. [With database hosted in EFS](./lambda_with_efs.md)
    
