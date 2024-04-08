@@ -223,9 +223,9 @@ owner of the chat.
 
 Below the list of members, include a form to add a user to the chat. It should include a
 `<select>` dropdown that has the list of users **not** in the chat and a button to add the
-user. When the form is submitted, the user should be added in the database and the list of
-users should be updated in the frontend. This form should not be visible unless the
-current user is the owner of the chat.
+user. When the form is submitted, the selected user should be added in the database and
+the list of users should be updated in the frontend. This form should not be visible
+unless the current user is the owner of the chat.
 
 ```
 ----------------------------------------------
