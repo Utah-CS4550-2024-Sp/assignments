@@ -202,7 +202,7 @@ We will use the terminology that a user is a `member` of a chat if there is a ro
 ### Chat details link
 
 Above the messages at the `/chats/:chatId` route, include a link with the text `settings`,
-the text`details`, or a settings icon that navigates the user to the
+the text `details`, or a settings icon. The link should navigates the user to the
 `/chats/:chatId/details` route.
 
 ### Chat details page
@@ -211,34 +211,48 @@ Add a frontend route `/chats/:chatId/details` and a component that shows the det
 given chat.
 
 It will include a form with an input field for the chat name and a button to update the
-chat name. The input field and button should be disabled unless the current user is the
-owner of the chat. Submitting the form should update the chat name in the backend and
-update the name in the list of chats.
+chat name. The input field should be disabled and the button should be disabled or hidden
+unless the current user is the owner of the chat. Submitting the form should update the
+chat name in the database and update the name in the list of chats.
 
 It will also include the list of members. Mark the user that is the owner of the chat.
-Next to each user besides the chat owner, include a button to remove the user from the
+Next to each user (except the chat owner), include a button to remove the user from the
 chat. If the button is clicked, it should remove the user from the chat and update the
-list of users. This button should be disabled unless the current user is the owner of the
-chat.
+list of users. This button should be disabled or hidden unless the current user is the
+owner of the chat.
+
+Below the list of members, include a form to add a user to the chat. It should include a
+`<select>` dropdown that has the list of users **not** in the chat and a button to add the
+user. When the form is submitted, the user should be added in the database and the list of
+users should be updated in the frontend. This form should not be visible unless the
+current user is the owner of the chat.
 
 ```
-chat name
------------------------------   ----------
-| nostromo                  |   | update |
------------------------------   ----------
+----------------------------------------------
+| chat name                                  |
+| -----------------------------   ---------- |
+| | nostromo                  |   | update | |
+| -----------------------------   ---------- |
+----------------------------------------------
 
-users
-                        ----------
-  bishop                | remove |
-                        ----------
-
-                        ----------
-  burke                 | remove |
-                        ----------
-
-                        ---------
-  ripley                | owner |
-                        ---------
+----------------------------------------------
+| users                                      |
+|                                 ---------- |
+|   bishop                        | remove | |
+|                                 ---------- |
+|                                            |
+|                                 ---------- |
+|   burke                         | remove | |
+|                                 ---------- |
+|                                            |
+|                                  --------- |
+|   ripley                         | owner | |
+|                                  --------- |
+|                                            |
+|   -----------------                ------- |
+|   | select a user |                | add | |
+|   -----------------                ------- |
+----------------------------------------------
 ```
 
 ### New chat button
@@ -249,8 +263,21 @@ the user to the route `/chats/new` page.
 ### New chat page
 
 Add a frontend route `/chats/new` and a component to create a new chat. It should include
-a form with an input field for the chat name and a button to create a new chat. Upon
-submitting the form,
+a form with an input field for the chat name and a button to create a new chat.
+
+```
+-------------------------------------
+| chat name                         |
+| --------------------------------- |
+| |                               | |
+| --------------------------------- |
+| ----------                        |
+| | create |                        |
+| ----------                        |
+-------------------------------------
+```
+
+Upon submitting the form,
 
 - it should update the list of chats on the left to include the new chat.
 
