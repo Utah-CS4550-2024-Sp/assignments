@@ -23,8 +23,10 @@ available on the internet for at least two weeks after the due date.
 
     b. [With database hosted in RDS](./lambda_with_rds.md)
 
-4. [Add an HTTP API](./api_gateway.md) that integrates with your lambda function
-5. [Deploy your frontend application](./amplify.md) to AWS Amplify.
+2. [Add an HTTP API](./api_gateway.md) that integrates with your lambda function
+3. [Deploy your frontend application](./amplify.md) to AWS Amplify.
+
+See [assignment05a.md](./assignment05a.md).
 
 ## Assignment #5b
 
@@ -35,7 +37,7 @@ support managing chats, including
 - adding/removing users from chats
 - enforcing some limited permissions around chat management and visilibity.
 
-The specification will be available soon.
+See [assignment05b.md](./assignment05b.md).
 
 ## Assignment #5c
 
@@ -45,5 +47,5 @@ support managing chat messages, including
 - deleting messages
 - enforcing some limited permissions around message management
 
-The specification will be available soon.
+See [assignment05c.md](./assignment05c.md).
 
