@@ -96,7 +96,7 @@ note of the database username, password, endpoint, and port.
 ## Create an execution role
 
 Navigate to the Roles page in the IAM console and create a role. It will be an AWS Service
-role with a Lambda use case. We need to attach four policies for our lambda function to
+role with a Lambda use case. We need to attach three policies for our lambda function to
 use: `AWSLambdaBasicExecutionRole`, `AWSLambdaVPCAccessExecutionRole`, and
 `AWSXRayDaemonWriteAccess`. Give the role a meaningful name, for example
 `pony-express-lambda-role`. Make note of the role ARN, of the form
