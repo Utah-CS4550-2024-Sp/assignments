@@ -84,7 +84,7 @@ We will use the terminology that a user is a `member` of a chat if there is a ro
    If the chat does not exist, the response has HTTP status code 404 and the body adheres
    to the `"entity_not_found"` format defined previously.
 
-   If the access token is not provided or is invalid, the response has HTTP status code
+   If the access token is invalid, the response has HTTP status code
    401 and the body adheres to the following format.
     ```json
     {
@@ -106,6 +106,9 @@ We will use the terminology that a user is a `member` of a chat if there is a ro
    of the chat, adhering to the following format.
     ```json
     {
+      "meta": {
+        "count": 1
+      },
       "users": [
         {
           "id": 1,
@@ -129,7 +132,7 @@ We will use the terminology that a user is a `member` of a chat if there is a ro
    If the chat or user does not exist, the response has HTTP status code 404 and the body
    adheres to the `"entity_not_found"` format defined previously.
 
-   If the access token is not provided or invalid, the response has HTTP status code 401
+   If the access token is invalid, the response has HTTP status code 401
    and the body adheres to the following format.
     ```json
     {
@@ -186,7 +189,7 @@ We will use the terminology that a user is a `member` of a chat if there is a ro
    If the chat or user does not exist, the response has HTTP status code 404 and the body
    adheres to the `"entity_not_found"` format defined previously.
 
-   If the access token is not provided or invalid, the response has HTTP status code 401
+   If the access token is invalid, the response has HTTP status code 401
    and the body adheres to the following format.
     ```json
     {
