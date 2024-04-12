@@ -34,7 +34,7 @@ We will use the terminology that a user is a `member` of a chat if there is a ro
       }
     }
     ```
-   If the token is not provided or is invalid, the response has HTTP status code 401 and
+   If the token is invalid, the response has HTTP status code 401 and
    the body adheres to the following format.
     ```json
     {
