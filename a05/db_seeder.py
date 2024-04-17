@@ -1,18 +1,15 @@
 import json
 
-from passlib.context import CryptContext
 from sqlalchemy import func
 from sqlmodel import Session, create_engine, select
 
 from backend.schema import *
 from backend.database import engine
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
 SQLModel.metadata.create_all(engine)
 
 local_engine = create_engine(
-    "sqlite:///backend/sample.db",
+    "sqlite:///backend/initial.db",
     connect_args={"check_same_thread": False},
 )
 
@@ -23,7 +20,11 @@ def upsert_all(session, cls, local_models) -> int:
     count = 0
     for local_model in local_models:
         if model_lookup.get(local_model.id) is None:
-            session.add(cls(**local_model.model_dump()))
+            session.add(cls(**{
+                key: value
+                for key, value in local_model.model_dump().items()
+                if key != "id"
+            }))
             count += 1
     session.commit()
     return count
