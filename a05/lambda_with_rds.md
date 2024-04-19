@@ -140,7 +140,7 @@ aws lambda create-function \
 --zip-file fileb://build.zip \
 --memory-size 1024 \
 --timeout 10 \
---environment "Variables={DB_LOCATION=RDS,PG_USERNAME={{username}},PG_PASSWORD={{password}},PG_ENDOINT={{endpoint}},PG_PORT={{port}}}" \
+--environment "Variables={DB_LOCATION=RDS,PG_USERNAME={{username}},PG_PASSWORD={{password}},PG_ENDPOINT={{endpoint}},PG_PORT={{port}}}" \
 --vpc-config SubnetIds=subnet-{{hex1}},subnet-{{hex2}},SecurityGroupIds=sg-{{hex3}}
 ```
 
